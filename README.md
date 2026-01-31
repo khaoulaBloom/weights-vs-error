@@ -4,28 +4,14 @@ This mini-project builds intuition for linear regression by showing how changing
 
 Project structure:
 
-weights-vs-error/
-├─ README.md
-├─ .gitignore
-├─ requirements.txt
-├─ notebooks/
-│  ├─ 01_weights_affect_error.md
-│  └─ 02_gradient_descent_path.md
-├─ src/
-│  ├─ __init__.py
-│  ├─ data.py
-│  ├─ model.py
-│  ├─ metrics.py
-│  ├─ visualize.py
-│  └─ train.py
-├─ data/
-│  ├─ raw/
-│  ├─ processed/
-│  └─ .gitkeep
-└─ outputs/
-   ├─ figures/
-   ├─ reports/
-   └─ .gitkeep
+---
+
+## Project structure
+- `src/` : reusable code (data, model, metrics, plots, training)
+- `notebooks/` : notebooks to run the experiments
+- `outputs/figures/` : saved figures (optional)
+- `data/` : placeholder for datasets (optional)
+
 
 --- 
 
@@ -82,5 +68,7 @@ If you get "ModuleNotFoundError: No module named 'src'", make sure your notebook
 If saved images are blank, it usually happens if plt.show() runs before saving. Use plotting functions that save via save_path (recommended), or save before plt.show().
 
 Requirements:
+
 Python 3.9+ recommended
+
 Packages: numpy, matplotlib, jupyter
